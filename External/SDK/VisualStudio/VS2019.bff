@@ -1,7 +1,7 @@
 // Visual Studio 2019
 //------------------------------------------------------------------------------
-.VS2019_BasePath         = '$_CURRENT_BFF_DIR_$/2019/Community'
-.VS2019_Version          = '14.22.27905'
+.VS2019_BasePath         = 'C:/Program Files (x86)/Microsoft Visual Studio/2019/Community'
+.VS2019_Version          = '14.25.28610'
 
 // X64 Compiler
 //------------------------------------------------------------------------------
@@ -69,6 +69,8 @@ Compiler( 'Compiler-VS2019-x64' )
                                     // Include Paths
                                     + ' /I"./"'
                                     + .VSIncludePaths
+
+                                    + ' /std:c++latest'
 
     .CompilerOptions                = ' $CommonCompilerOptions$ "%1" /Fo"%2"'
     .CompilerOptionsC               = ' $CommonCompilerOptions$ "%1" /Fo"%2"'
